@@ -11,9 +11,9 @@
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
       <!-- Favicon -->
-      <link rel="shortcut icon" href="{{ asset('img/Logo-Xavier.png') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('img/Logo-Xavier.png') }}" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/Logo-Xavier.png') }}">
+      <link rel="shortcut icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/x-icon">
+    <link rel="icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png">
     <style>
         body {
             min-height: 100vh;
@@ -46,7 +46,7 @@
 
         <!-- LOGO -->
         <div class="text-center login-logo mb-3">
-            <img src="{{ asset('img/Logo-Xavier.png') }}" alt="Logo">
+            <img src="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" alt="Logo">
             <h4 class="mt-2 fw-bold">Admin Panel</h4>
             <small class="text-muted">Sign in to start your session</small>
         </div>

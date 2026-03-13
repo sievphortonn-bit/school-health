@@ -17,13 +17,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('img/Logo-Xavier.png') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('img/Logo-Xavier.png') }}" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/Logo-Xavier.png') }}">
+    <link rel="shortcut icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/x-icon">
+    <link rel="icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png">
 
     <!-- Master Dashboard CSS -->
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-    
+    <link rel="stylesheet" href="http://school-health-xjs.vercel.app/css/dashboard.css">
+
     @stack('styles')
 
     <style>
@@ -129,7 +129,7 @@
             background: rgb(255, 255, 255);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255,255,255,0.3);
-            
+
         }
 
         .dropdown-item-modern {
@@ -399,15 +399,15 @@
 <!-- ================= MODERN GLASS NAVBAR ================= -->
 <nav class="glass-navbar">
     <a class="navbar-brand" href="{{ route('dashboard') }}">
-        <img src="{{ asset('img/Logo-Xavier.png') }}" alt="Logo" class="brand-logo">
+        <img src="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" alt="Logo" class="brand-logo">
         <span class="brand-text d-none d-md-inline" style="font-family: Koulen;">ប្រព័ន្ធគ្រប់គ្រងសុខភាពសាលារៀន</span>
     </a>
 
     @auth
     <div class="dropdown">
         <a href="#" class="user-dropdown" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="{{ Auth::user()->avatar ?? 'https://ui-avatars.com/api/?name=' . urlencode(Auth::user()->name) . '&background=355912&color=fff' }}" 
-                 class="user-avatar" 
+            <img src="{{ Auth::user()->avatar ?? 'https://ui-avatars.com/api/?name=' . urlencode(Auth::user()->name) . '&background=355912&color=fff' }}"
+                 class="user-avatar"
                  alt="User">
             <span class="user-name d-none d-md-inline">{{ Auth::user()->name }}</span>
         </a>
@@ -453,7 +453,7 @@
     <!-- Dashboard -->
     <div class="sidebar-section">
         <div class="sidebar-header">មេ</div>
-        <a href="{{ route('dashboard') }}" 
+        <a href="{{ route('dashboard') }}"
            class="nav-link-glass {{ request()->routeIs('dashboard') ? 'active' : '' }}">
             <i class="bi bi-speedometer2"></i>
             <span>ផ្ទាំងគ្រប់គ្រង</span>
@@ -463,12 +463,12 @@
     <!-- Staff & Teachers -->
     <div class="sidebar-section">
         <div class="sidebar-header">ធនធានមនុស្ស</div>
-        <a href="{{ url('/staff') }}" 
+        <a href="{{ url('/staff') }}"
            class="nav-link-glass {{ request()->is('staff*') ? 'active' : '' }}">
             <i class="bi bi-person-workspace"></i>
             <span>បុគ្គលិក</span>
         </a>
-        <a href="/teachers" 
+        <a href="/teachers"
            class="nav-link-glass {{ request()->is('teachers*') ? 'active' : '' }}">
             <i class="bi bi-person-badge"></i>
             <span>គ្រូបង្រៀន</span>
@@ -490,15 +490,15 @@
             <i class="bi bi-chevron-down chevron"></i>
         </a>
 
-        <div class="collapse {{ request()->is('students*') || request()->is('all*') || request()->is('grade*') ? 'show' : '' }}" 
+        <div class="collapse {{ request()->is('students*') || request()->is('all*') || request()->is('grade*') ? 'show' : '' }}"
              id="studentCollapse">
             <div class="sub-links-container">
-                <a href="{{ route('students.all') }}" 
+                <a href="{{ route('students.all') }}"
                    class="nav-link-sub {{ request()->is('all') || request()->is('grade*') ? 'active' : '' }}">
                     <i class="bi bi-grid-3x3-gap-fill"></i>
                     <span>សិស្សតាមថ្នាក់</span>
                 </a>
-                <a href="{{ route('students.index') }}" 
+                <a href="{{ route('students.index') }}"
                    class="nav-link-sub {{ request()->is('students') && !request()->is('students/*') ? 'active' : '' }}">
                     <i class="bi bi-person-plus"></i>
                     <span>បញ្ចូលសិស្សថ្មី</span>
@@ -510,12 +510,12 @@
     <!-- Patients -->
     <div class="sidebar-section">
         <div class="sidebar-header">ពេទ្យ</div>
-        <a href="/patients" 
+        <a href="/patients"
            class="nav-link-glass {{ request()->is('patients*') && !request()->is('patients/report*') ? 'active' : '' }}">
             <i class="bi bi-clipboard-heart"></i>
             <span>អ្នកជំងឺ</span>
         </a>
-        <a href="{{ route('patients.report') }}" 
+        <a href="{{ route('patients.report') }}"
            class="nav-link-glass {{ request()->routeIs('patients.report*') ? 'active' : '' }}">
             <i class="bi bi-bar-chart"></i>
             <span>របាយការណ៍</span>
@@ -524,7 +524,7 @@
 
     <!-- Sidebar Footer -->
     <div class="sidebar-footer">
-        <img src="{{ asset('img/Logo-Xavier.png') }}" alt="Logo">
+        <img src="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" alt="Logo">
         <p class="mb-0">សាលាសន្តសាវីយេ</p>
         <p style="font-size: 11px;">© {{ date('Y') }} រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
     </div>
