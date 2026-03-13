@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('img/Logo-Xavier.png') }}" type="image/png">
+    <link rel="icon" href="https://school-health-xjs-health.vercel.app/img/logo-Xavier.png" type="image/png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
 
         <!-- LOGO -->
         <div class="text-center register-logo mb-3">
-            <img src="{{ asset('img/Logo-Xavier.png') }}" alt="Logo">
+            <img src="https://school-health-xjs-health.vercel.app/img/logo-Xavier.png" alt="Logo">
             <h4 class="mt-2 fw-bold">Create Account</h4>
             <small class="text-muted">Register a new membership</small>
         </div>
