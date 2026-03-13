@@ -17,12 +17,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/x-icon">
-    <link rel="icon" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://school-health-xjs.vercel.app/img/Logo-Xavier.png">
+    <link rel="shortcut icon" href="http://school-health-xjs-health.vercel.app/img/Logo-Xavier.png" type="image/x-icon">
+    <link rel="icon" href="http://school-health-xjs-health.vercel.app/img/Logo-Xavier.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://school-health-xjs-health.vercel.app/img/Logo-Xavier.png">
 
     <!-- Master Dashboard CSS -->
-    <link rel="stylesheet" href="http://school-health-xjs.vercel.app/css/dashboard.css">
+    <link rel="stylesheet" href="http://school-health-xjs-health.vercel.app/css/dashboard.css">
 
     @stack('styles')
 
@@ -399,7 +399,7 @@
 <!-- ================= MODERN GLASS NAVBAR ================= -->
 <nav class="glass-navbar">
     <a class="navbar-brand" href="{{ route('dashboard') }}">
-        <img src="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" alt="Logo" class="brand-logo">
+        <img src="http://school-health-xjs-health.vercel.app/img/Logo-Xavier.png" alt="Logo" class="brand-logo">
         <span class="brand-text d-none d-md-inline" style="font-family: Koulen;">ប្រព័ន្ធគ្រប់គ្រងសុខភាពសាលារៀន</span>
     </a>
 
@@ -524,7 +524,7 @@
 
     <!-- Sidebar Footer -->
     <div class="sidebar-footer">
-        <img src="http://school-health-xjs.vercel.app/img/Logo-Xavier.png" alt="Logo">
+        <img src="http://school-health-xjs-health.vercel.app/img/Logo-Xavier.png" alt="Logo">
         <p class="mb-0">សាលាសន្តសាវីយេ</p>
         <p style="font-size: 11px;">© {{ date('Y') }} រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
     </div>
